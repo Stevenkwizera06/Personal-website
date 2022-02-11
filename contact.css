@@ -1,0 +1,14 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    padding: 0px;
+}
+
+.container {
+position: relative;
+width: 1040px;
+height: 1608px;
+background: #0F0F0F;
+border: 7px solid #4311D1;
+box-sizing: border-box;
+}

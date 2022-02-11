@@ -12,7 +12,7 @@ body {
 
 a {
     text-decoration: none;
-    color: rgb(63, 7, 216);
+    color: rgb(197, 183, 238)94);
 }
 
 ul {
@@ -23,15 +23,24 @@ ul {
 
 .hero-container {
     min-height: 100vh;
-    background: url('./images/wakaso.jpeg');
+    background: url('./images/wakso\ image.jpeg');
     background-size: cover;
+    
+    background: size 1920px 1030px;
+    /* background-size: 100% 100%; */
     background-position: center;
+    background-repeat: no-repeat;
 }
-.hero-container nav{
+/* .hero-container nav{
     padding: 10px;
     padding-inline: 40px;
     height: 20vh;
-}
+} */
+/* .hero-container h1{
+    font-size: 70px;
+    font-weight: 500;
+    display: flex;
+} */
 .hero-content{
     height: 80vh;
     padding-inline: 5%;
@@ -41,6 +50,11 @@ ul {
     align-items: flex-start;
 }
 .hero-content h1{
+    font-size: 100px;
+    font-weight: 800;
+    
+}
+.hero-content h2 {
     font-size: 100px;
     font-weight: 800;
 }
@@ -74,13 +88,29 @@ header {
     .navigation {
         display: flex;
         padding: 0 ,6rem;
-       
+    
     }
+     .body-nav{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5%;
+    padding: 0 ,6rem;
+}
+.body-nav button{
+    background-color: transparent;
+    color: white;
+    border: 0px;
+    font-size: medium;
+    cursor: pointer;
+}
+.body-nav button:hover{
+    font-weight: 600;
+}
 .main{
     background-color: #0F0F0F;
     padding: 5%;
 }
-.body-nav{
+/* .body-nav{
     display: flex;
     justify-content: space-between;
     margin-bottom: 5%;
@@ -94,7 +124,7 @@ header {
 }
 .body-nav button:hover{
     font-weight: 600;
-}
+} */
 .blogs h1{
     font-size: xx-large;
     text-align: center;
@@ -120,9 +150,19 @@ header {
 .section-1 h1, .section-2 h2{
     margin-bottom: 3%;
 }
+.footer-icons {
+    /* display: flex; */
+    /* justify-content: space-between; */
+    display: grid;
+    align-content: center;
+    grid-template-columns: repeat(5, 1fr);
+}
 .footer-icons img{
     width: 20px;
     height: 20px;
+
+    
+    
 }
 .subscribe-form{
     margin-top: 2%;
