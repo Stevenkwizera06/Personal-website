@@ -4,29 +4,88 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Contact Form</title>
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 </head>
 <body>
-    <div class="container">
+    <div class="ctct-container">
+        <nav>
+            <ul class="navigation">
+               <li><a href="./index.html">Home</a></li>
+               <li><a href="./contact.html">Contact</a></li>
+               <li><a href="./about.html">About me</a></li>
+               <li><a href="./blog.html">Blog</a></li>
+
+               <!-- <header class="body-nav">
+                   <button class="contact form" type="button">Contact Form</button>
+                   <button class="about me" type="button">About me</button>
+              </header> -->
+               <!-- <li> <button class="contact form" type="button">Contact Form</button></li>
+               <li><button class="about me" type="button">About me</button></li> -->
+              
+            </ul>
+       </nav>
         <div class="contact-box">
             <h2>Nice To Meet You!</h2><br>
             <p>Have a question or  just want to get touch? let’s chat.</p>
+            <div>
+                <p>Names:*</p><br>
+                <input type="text" class="field" placeholder="Your Name">
+            </div>
             
-            <p>Names:*</p><br>
-            <input type="text" class="field" placeholder="Your Name">
+            <div>
+                <p>Email:*</p><br>
+                <input type="text" class="field" placeholder="Your Email">
+            </div>
+            
+            <div>
+                <p>Subject:*</p><br>
+                <input type="text" class="field" placeholder="Product price question">
+            </div>
+            <div>
+                <p>Message:*</p><br>
+                <input type="text" class="field" placeholder="Please write your message here">
+            </div>
 
-            <p>Email:*</p><br>
-            <input type="text" class="field" placeholder="Your Email">
-
-            <p>Subject:*</p><br>
-            <input type="text" class="field" placeholder="Product price question">
-
-            <p>Message:*</p><br>
-            <input type="text" class="field" placeholder="Please write your message here">
-
-            <p>Send</p>
+            <button>Send</button>
 
         </div>
     </div>
+    <footer>
+        <section class="footer">
+            <div class="section-1">
+                <h1>About me</h1>
+                 <p>
+                     “I have just over a year of experience
+                     as a web developer  with my first
+                     technology. In my short time
+                     there, I've already contributed to
+                     over a dozen projects and assisted with
+                     managing one project for one of the
+                     firm's long-time clients.
+                 </p>
+            </div>
+            
+            <div class="section-2">
+                 <h1>Connect me</h1>
+                 <div class="footer-icons">
+                     <img src="images/github.png" alt="">
+                     <img src="images/IG.jpg" alt="">
+                     <img src="images/youtube.png" alt="">
+                     <img src="images/linkedin.png" alt="">
+                     <img src="images/subscribe.png" alt="">
+                     <!-- <img src="images/email.png" alt="">
+                     <img src="images/send.png" alt=""> -->
+                 </div>
+                 <div class="subscribe-form">
+                     <input placeholder="Your email...." />
+                     <button>Send</button>
+                 </div>
+            </div>
+              
+        </section>
+ 
+    </footer>
 </body>
 </html>

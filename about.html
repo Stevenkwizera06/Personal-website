@@ -4,19 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>About me</title>
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 </head>
 <body>
-    <div class="hero-container">
+    <div class="abt-hero-container">
         <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Blog</a></li>
+            <ul class="navigation">
+               <li><a href="./index.html">Home</a></li>
+               <li><a href="./contact.html">Contact</a></li>
+               <li><a href="./about.html">About me</a></li>
+               <li><a href="./blog.html">Blog</a></li>
             </ul>
-        </nav>
+       </nav>
 
-        <section class="main">
+        <section class="abt-main">
             <a href="">
                 <img src="images/wakaso.jpeg" alt="">
             </a>
@@ -33,9 +36,70 @@
 
         </section>
 
-        <section>
+        <section class="skills-section">
             <h1>My skills</h1>
+                <div class="single-skill">
+                    <label for="file">visual studio code</label>
+                    <div class="progress-bar">
+                        <div class="progress-inner" style="width:90%">90%</div>
+                    </div>
+                </div>
+
+                <div class="single-skill">
+                    <label for="file">html & css</label>
+                    <div class="progress-bar" >
+                        <div class="progress-inner" style="width:50%">50%</div>
+                    </div>
+                </div>
+                   
+                <div class="single-skill">
+                    <label for="file">javascript</label>
+                    <div class="progress-bar">
+                        <div class="progress-inner" style="width:30%">30%</div>
+                    </div>
+                </div>
+                <div class="single-skill">
+                    <label for="file">figma</label>
+                    <div class="progress-bar">
+                        <div class="progress-inner" style="width:20%">20%</div>
+                    </div>
+                </div>
         </section>
     </div>
+    <footer>
+        <section class="footer">
+            <div class="section-1">
+                <h1>About me</h1>
+                 <p>
+                     “I have just over a year of experience
+                     as a web developer  with my first
+                     technology. In my short time
+                     there, I've already contributed to
+                     over a dozen projects and assisted with
+                     managing one project for one of the
+                     firm's long-time clients.
+                 </p>
+            </div>
+            
+            <div class="section-2">
+                 <h1>Connect me</h1>
+                 <div class="footer-icons">
+                     <img src="images/github.png" alt="">
+                     <img src="images/IG.jpg" alt="">
+                     <img src="images/youtube.png" alt="">
+                     <img src="images/linkedin.png" alt="">
+                     <img src="images/subscribe.png" alt="">
+                     <!-- <img src="images/email.png" alt="">
+                     <img src="images/send.png" alt=""> -->
+                 </div>
+                 <div class="subscribe-form">
+                     <input placeholder="Your email...." />
+                     <button>Send</button>
+                 </div>
+            </div>
+              
+        </section>
+ 
+    </footer>
 </body>
 </html>
