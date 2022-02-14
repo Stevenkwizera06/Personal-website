@@ -48,6 +48,7 @@ ul {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    justify-content: center;
 }
 .hero-content h1{
     font-size: 100px;
@@ -62,14 +63,32 @@ ul {
     font-size: 20px;
     font-weight: 600;
 }
-.hero-container nav ul, .ctct-container nav ul, .abt-hero-container nav ul{
+.hero-container nav, .ctct-container nav, .abt-hero-container nav, .blg-hero-container nav{
+    display: flex;
+    justify-content: space-between;
+}
+.hero-container nav ul, .ctct-container nav ul, .abt-hero-container nav ul, .blg-hero-container nav ul{
     display: flex;
     justify-content: end;
     gap: 15px;
     /* color: red; */
     font-weight: bold;
     font-size: 18px;
-    padding-block: 10px;
+    padding-block: 30px;
+    padding-inline: 5%;
+    text-transform: uppercase;
+
+}
+.nav-label{
+    display: flex;
+    align-items: center;
+    padding-left: 5%;
+    font-size: 44px;
+    font-weight: 800;
+}
+.nav-label a{
+    text-decoration: none;
+    color: inherit;
 }
 .blogs-container{
     width: 100%;
@@ -84,7 +103,19 @@ ul {
     display: flex;
     justify-content: end;
 }
-
+@media screen and (max-width: 780px){
+    .blogs-container{
+        flex-direction: column;
+    }
+    .blogs-container a{
+        width: 80%;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+    .blogs-container a:nth-child(2n){
+        justify-content: start;
+    }
+}
 header {
     display: flex;
     justify-content: space-between;
@@ -136,6 +167,7 @@ header {
     font-weight: 700;
     color: whitesmoke;
     margin-bottom: 5%;
+    text-transform: uppercase;
 }
 
 .footer{
@@ -145,6 +177,7 @@ header {
     color: whitesmoke;
     padding: 5%;
 }
+
 .section-1{
     width: 70%;
     padding-right: 10%;
@@ -152,8 +185,10 @@ header {
 .section-2{
     width: 30%;
 }
-.section-1 h1, .section-2 h2{
+
+.section-1 h1, .section-2 h1{
     margin-bottom: 3%;
+    text-transform: uppercase;
 }
 .footer-icons {
     /* display: flex; */
@@ -188,7 +223,27 @@ header {
 }
 
 
-
+@media screen and (max-width: 768px){
+    .footer{
+        flex-direction: column;
+    }
+    .section-1, .section-2{
+        width: 100%;
+    }
+    .section-1{
+        margin-bottom: 40px;
+    }
+    .subscribe-form{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .subscribe-form input {
+        width: 70%;
+    }
+    .section-1 h1, .section-2 h1{
+        text-align: center;
+    }
+}
 
 
 /* contact page css */
@@ -240,7 +295,7 @@ header {
 
 
 /* styles for about html page */
-.abt-hero-container{
+.abt-hero-container, .blg-hero-container{
     background: rgb(27, 26, 26);
     color: whitesmoke;
 }
@@ -264,6 +319,19 @@ header {
     display: flex;
     align-items: center;
     width: 50%;
+}
+@media screen and (max-width: 768px){
+    .abt-hero-container .abt-main{
+        flex-direction: column;
+    }
+    .abt-hero-container .abt-main a{
+        height: 400px;
+        width: 100%;
+    }
+    .abt-hero-container .abt-main p{
+        width: 100%;
+        padding-inline: 5%;
+    }
 }
 
 .skills-section{
@@ -296,3 +364,50 @@ header {
     background: #C6169F;
 }
 
+
+
+/* blog css */
+
+.blg-hero-container{
+    padding-inline: 5%;
+}
+.blg-main{
+    padding-inline-end: 30%;
+    min-height: 100vh;
+}
+.blg-main-title{
+    font-size: 28px;
+    margin-block: 50px;
+    text-align: center;
+    width: 100%;
+    text-transform: uppercase;
+}
+@media screen and (max-width: 768px){
+    .blg-main{
+        padding-inline-end: 4%;
+    }
+}
+.blog-single{
+    display: flex;
+    padding-bottom: 60px;
+}
+.blog-img{
+    width: 400px;
+    height: auto;
+}
+.blog-description{
+    min-height: 100%;
+    padding-top: 2%;
+    padding-inline-start: 2%;
+}
+.blog-title{
+    font-size: 24px;
+    margin-bottom: 8%;
+}
+.blog-title a{
+    cursor: pointer;
+    color: inherit;
+}
+.blog-title a:hover{
+    opacity: 0.8;
+}
