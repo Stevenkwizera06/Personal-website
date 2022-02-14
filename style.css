@@ -67,6 +67,7 @@ ul {
     display: flex;
     justify-content: space-between;
 }
+
 .hero-container nav ul, .ctct-container nav ul, .abt-hero-container nav ul, .blg-hero-container nav ul, .lgn-container nav ul{
     display: flex;
     justify-content: end;
@@ -89,6 +90,11 @@ ul {
 .nav-label a{
     text-decoration: none;
     color: inherit;
+}
+@media screen and (max-width: 768px){
+    .hero-container nav ul, .ctct-container nav ul, .abt-hero-container nav ul, .blg-hero-container nav ul, .lgn-container nav ul{
+        flex-direction: column;
+    } 
 }
 .blogs-container{
     width: 100%;
@@ -250,8 +256,8 @@ header {
 .ctct-container{
     background: rgb(27, 26, 26);
     color: whitesmoke;
-    padding-top: 4vh;
-    height: 100vh;
+    padding-block: 4vh;
+    min-height: 100vh;
     font-family:Roboto;
 }   
 
@@ -261,6 +267,12 @@ header {
     width: 50%;
     padding: 5%;
     margin: auto;
+}
+
+@media screen and (max-width: 768px){
+    .ctct-container .contact-box{
+        width: 80%;
+    }
 }
 .contact-box h2{
     text-align: center;
@@ -365,7 +377,6 @@ header {
 }
 
 
-
 /* blog css */
 
 .blg-hero-container{
@@ -408,6 +419,14 @@ header {
     cursor: pointer;
     color: inherit;
 }
+@media screen and (max-width: 768px){
+    .blog-single{
+        flex-direction: column;
+    }
+    .blog-img{
+        width: 100%;
+    }
+}
 .blog-title a:hover{
     opacity: 0.8;
 }
@@ -430,6 +449,8 @@ header {
     width: 50%;
     padding: 5%;
     margin: auto;
+    background: #0f0f0fd0;
+    color: whitesmoke;
 }
 .log-box button{
     width: 100%;
@@ -464,3 +485,16 @@ header {
     margin-bottom: 10px;
 }
 
+.lgn-container .nav-label{
+    color: whitesmoke;
+}
+.log-box h1{
+    color: whitesmoke;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.log-box button:hover{
+    background:rgb(197, 183, 238);
+    color:rgb(27, 26, 26);
+}
