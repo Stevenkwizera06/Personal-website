@@ -63,11 +63,11 @@ ul {
     font-size: 20px;
     font-weight: 600;
 }
-.hero-container nav, .ctct-container nav, .abt-hero-container nav, .blg-hero-container nav{
+.hero-container nav, .ctct-container nav, .abt-hero-container nav, .blg-hero-container nav, .lgn-container nav{
     display: flex;
     justify-content: space-between;
 }
-.hero-container nav ul, .ctct-container nav ul, .abt-hero-container nav ul, .blg-hero-container nav ul{
+.hero-container nav ul, .ctct-container nav ul, .abt-hero-container nav ul, .blg-hero-container nav ul, .lgn-container nav ul{
     display: flex;
     justify-content: end;
     gap: 15px;
@@ -411,3 +411,56 @@ header {
 .blog-title a:hover{
     opacity: 0.8;
 }
+
+/* log in css */
+.lgn-container {
+    min-height: 100vh;
+    background: url('./images/wallpaper.jpg');
+    background-size: cover;
+    
+    background: size 1920px 1030px;
+    /* background-size: 100% 100%; */
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+.lgn-container .log-box{
+    border: 2px solid whitesmoke;
+    border-radius: 5px;
+    width: 50%;
+    padding: 5%;
+    margin: auto;
+}
+.log-box button{
+    width: 100%;
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+    padding-block: 8px;
+    margin-top: 20px;
+    color: rgb(223, 215, 215);
+    cursor: pointer;
+    background: transparent;
+}
+.lgn-container .log-box{
+    border: 2px solid whitesmoke;
+    border-radius: 5px;
+    width: 50%;
+    padding: 5%;
+    margin: auto;
+}
+.log-box h1{
+    text-align: center;
+    color: blue;
+}
+.log-box input{
+    font-size: 14px;
+    padding-block: 8px;
+    padding-inline-start: 4px;
+    border: 1px solid whitesmoke;
+    width: 100%;
+    border-radius: 5px;
+    background: transparent;
+    color: whitesmoke;
+    margin-bottom: 10px;
+}
+
