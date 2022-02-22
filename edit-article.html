@@ -5,48 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Blog page</title>
+    <title>Dashboard</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="blg-hero-container">
+    <div class="dshb-container">
         <nav>
             <h2 class="nav-label"><a href="./index.html">Steven.</a></h2>
             <ul class="navigation">
-               <li><a href="./index.html">Home</a></li>
+               <li><a href="#">Home</a></li>
                <li><a href="./contact.html">Contact</a></li>
                <li><a href="./about.html">About me</a></li>
                <li><a href="./blog.html">Blog</a></li>
                <li><a href="./login.html">Log in</a></li>
             </ul>
        </nav>
-        <section class="blg-main">
-            <header class="blg-main-title">Blog title title</header>
-            <div class="blog-single">
-                <img src="./images/guide.png" class="blog-img" alt=""/>
-                <div class="blog-description">
-                    <h5 class="blog-title"><a>Lorem ipsum, dolor sit amet. Vitae, quidem.</a></h5>
-                    <p class="blog-summary">
-                        <h1>Here are five big advantages of being a web developer</h1>
-                            1.You can work remotely
-                            2.You can use your skills to build your own websites and web applications
-                            3.You can work independently
-                            4.Get into the profitable tech industry
-                            5.You can build awesome stuff
-                        <h2>How to Become a Web Developer</h2>
-                            1. Learn the Basics of HTML, CSS, and Javascript
-                            2.Learn the Basics of WordPress
-                            3.Get to Know UI and UX
-                            4.Learn SQL and PHP (Optional)
-                            5.Learn the Basics of SEO
-                            6.Make Sure Your Site is Responsive
-                    </p>
-                </div>
-            </div>
-        </section>
     </div>
+
+        <section class="left-main">
+            <div class="nav-sidebar">
+                <ul>
+                    <li><a href="./dashboard.html">All Articles</a></li>
+                    <li><a href="./add-article.html">Add Article</a></li>
+                </ul>
+                <a>log out</a>
+            </div>
+            <div class="dash-main">
+                <header class="dshb-main-title">Edit articles</header>
+                <form class="add-form">
+                    <div >
+                        <label for="">Title</label>
+                        <input type="text" name="title" id="">
+                    </div>
+                    <div>
+                        <label for="">Summary</label>
+                        <textarea name="summary" id="" rows="5"></textarea>
+                    </div>
+                    <div>
+                        <label for="">Body</label>
+                        <textarea name="body" id=""  rows="15"></textarea>
+                    </div>
+                    <div>
+                        <input type="submit" value="Update" class="btn-submit">
+                    </div>
+
+                </form>
+            </div>
+            
+        </section>
+
+
         <footer>
             <section class="footer">
                 <div class="section-1">
