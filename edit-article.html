@@ -30,25 +30,25 @@
                     <li><a href="./dashboard.html">All Articles</a></li>
                     <li><a href="./add-article.html">Add Article</a></li>
                 </ul>
-                <a>log out</a>
+                <a  onclick="logout()">log out</a>
             </div>
             <div class="dash-main">
                 <header class="dshb-main-title">Edit articles</header>
                 <form class="add-form">
                     <div >
                         <label for="">Title</label>
-                        <input type="text" name="title" id="">
+                        <input type="text" name="title" id="title">
                     </div>
                     <div>
                         <label for="">Summary</label>
-                        <textarea name="summary" id="" rows="5"></textarea>
+                        <textarea name="summary" id="summary" rows="5"></textarea>
                     </div>
                     <div>
                         <label for="">Body</label>
-                        <textarea name="body" id=""  rows="15"></textarea>
+                        <textarea name="body" id="body"  rows="15"></textarea>
                     </div>
                     <div>
-                        <input type="submit" value="Update" class="btn-submit">
+                        <input type="submit" value="Update" id="updatePost" class="btn-submit">
                     </div>
 
                 </form>
@@ -92,6 +92,13 @@
             </section>
      
         </footer>
-    
+        <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
+        <script src="./js/firebase.js"></script>
+        <script src="./js/auth.js"></script>
+        <script src="./js/logout.js"></script>
+        <script src="./js/update.js"></script>
 </body>
 </html>

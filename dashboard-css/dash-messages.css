@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+:root {
+  --primary-color: #FFFFFF;
+  --secondary-color:#59CEA7;
+  --third-color:rgba(5, 21, 49, 0.94);
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins';
+}
+
+main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30% 70%;
+      grid-template-columns: 30% 70%;
+}
+
+main .left-side {
+  color: var(--primary-color);
+  background: var(--third-color);
+  position: fixed;
+  height: 650px;
+}
+
+main .left-side .upper-content {
+  background: rgba(11, 5, 49, 0.952);
+  text-align: center;
+  height: 60px;
+  margin-top: -20px;
+}
+
+main .left-side .upper-content h1 {
+  padding-top: 15px;
+  font-size: 25px;
+  margin: 10px;
+}
+
+main .left-side .lower-content {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -ms-grid;
+  display: grid;
+  gap: 20px;
+}
+
+main .left-side .lower-content .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .left-side .lower-content .content:active {
+  color: var(--secondary-color);
+}
+
+main .left-side .lower-content .content .iconify {
+  width: 45px;
+  height: 45px;
+  margin-right: 10px;
+}
+
+main .left-side .lower-content .content a {
+  margin-right: 10px;
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+main .left-side .lower-content .content a:hover {
+  color: var(--secondary-color);
+}
+
+main .left-side .lower-content .content p {
+  color: var(--secondary-color);
+}
+
+main .left-side .lower-content #log-out {
+  color: var(--secondary-color);
+}
+
+main .left-side .lower-content #log-out h3 {
+  cursor: pointer;
+}
+
+main .left-side .lower-content #log-out h3:hover {
+  color: var(--primary-color);
+}
+
+main .right-side {
+  background-color: var(--primary-color);
+  text-align: center;
+  display: -ms-grid;
+  display: grid;
+  gap: 10px;
+  width: 270%;
+  margin-left: 255px;
+}
+
+main .right-side .upper-content {
+  background: #f0efef;
+  position: fixed;
+  width: 100%;
+  font-size: 8px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .right-side .lower-content {
+  margin: 40px 10px 20px 10px;
+}
+
+main .right-side .lower-content .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30% 30% 40%;
+      grid-template-columns: 30% 30% 40%;
+  gap: 5px;
+}
