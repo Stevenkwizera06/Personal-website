@@ -23,7 +23,6 @@ ul {
     min-height: 100vh;
     background: url('./images/img\ 5.jpg');
     background-size: cover;
-    
     background: size 1024px 768px;
     /* background-size: 100% 100%; */
     background-position: center;
@@ -54,13 +53,13 @@ ul {
     font-weight: 600;
     color: whitesmoke;
 }
-.hero-container nav, .ctct-container nav, .abt-hero-container nav, .blg-hero-container nav, .lgn-container nav, .dshb-container nav{
+.hero-container nav, .ctct-container nav, .abt-hero-container nav, .blg-hero-container nav, .lgn-container nav, .dshb-container nav, .sign-up-container nav{
     display: flex;
     justify-content: space-between;
     
 }
 
-.hero-container nav ul, .ctct-container nav ul, .abt-hero-container nav ul, .blg-hero-container nav ul, .lgn-container nav ul .dshb-container nav ul{
+.hero-container nav ul, .ctct-container nav ul, .abt-hero-container nav ul, .blg-hero-container nav ul, .lgn-container nav ul .dshb-container nav ul, .sign-up-container nav ul{
     display: flex;
     justify-content: end;
     gap: 15px;
@@ -96,6 +95,7 @@ ul {
 }
 .blogs-container a{
     width: 40%;
+    margin: 2px;
 }
 .blogs-container a:nth-child(2n){
     display: flex;
@@ -311,6 +311,12 @@ header {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    
+}
+.abt-main img{
+    margin-left: 50px;
+
+      
 }
 
 .abt-hero-container .abt-main p{
@@ -372,7 +378,7 @@ header {
 }
 .blg-main{
     padding-inline-end: 30%;
-    min-height: 100vh;
+    
 }
 .blg-main-title{
     font-size: 28px;
@@ -419,10 +425,38 @@ header {
     opacity: 0.8;
 }
 
-/* log in css */
-.lgn-container {
+/* sign-up css */
+.sgn-container nav ul{
+    display: flex;
+    justify-content: end;
+    gap: 15px;
+    font-weight: bold;
+    font-size: 18px;
+    padding-block: 30px;
+    padding-inline: 5%;
+    text-transform: uppercase;
+}
+
+/* log-in css */
+.lgn-container nav{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.lgn-container nav ul{
+    display: flex;
+    justify-content: end;
+    gap: 15px;
+    font-weight: bold;
+    font-size: 18px;
+    padding-block: 30px;
+    padding-inline: 5%;
+    text-transform: uppercase;
+}
+
+.lgn-container{
     min-height: 100vh;
-    background: url('./images/wallpaper.jpg');
+    background: url('./images/img\ 5.jpg');
     background-size: cover;
     
     background: size 1920px 1030px;
@@ -437,7 +471,7 @@ header {
     width: 50%;
     padding: 5%;
     margin: auto;
-    background: #0f0f0fd0;
+    background: #9268df2c;
     color: whitesmoke;
 }
 .lgn-container .log-box .btn2 {
@@ -511,6 +545,22 @@ a:hover {
     padding-inline: 5%;
     background:rgb(31, 30, 30);
 }
+.dshb-container nav{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.dshb-container nav ul{
+    display: flex;
+    justify-content: end;
+    gap: 15px;
+    font-weight: bold;
+    font-size: 18px;
+    padding-block: 30px;
+    padding-inline: 5%;
+    text-transform: uppercase;
+}
+
 .left-main{
     min-height: 100vh;
     background:rgb(31, 30, 30);
@@ -636,4 +686,103 @@ a:hover {
 }
 .btn-submit:hover{
     background: #30db36;
+}
+
+/* sign-up css */
+.sgn-container nav ul{
+    display: flex;
+    justify-content: end;
+    gap: 15px;
+    font-weight: bold;
+    font-size: 18px;
+    padding-block: 30px;
+    padding-inline: 5%;
+    text-transform: uppercase;
+}
+
+/* sign-up css */
+
+.sign-up-container {
+    min-height: 100vh;
+    background: url('./images/img\ 5.jpg');
+    background-size: cover;
+    
+    background: size 1920px 1030px;
+    /* background-size: 100% 100%; */
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+.sign-up-container .sign-box{
+    border: 2px solid whitesmoke;
+    border-radius: 5px;
+    width: 50%;
+    padding: 5%;
+    margin: auto;
+    background: #9268df2c;
+    color: whitesmoke;
+}
+.sign-up-container .sign-box .btn2 {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.sign-box button{
+    width: 100%;
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+    padding-block: 8px;
+    margin-top: 20px;
+    color: rgb(223, 215, 215);
+    cursor: pointer;
+    background: transparent;
+}
+.sign-up-container .sign-box{
+    border: 2px solid whitesmoke;
+    border-radius: 5px;
+    width: 50%;
+    padding: 5%;
+    margin: auto;
+}
+.sign-box h1{
+    text-align: center;
+    color: blue;
+}
+.sign-box input{
+    font-size: 14px;
+    padding-block: 8px;
+    padding-inline-start: 4px;
+    border: 1px solid whitesmoke;
+    width: 100%;
+    border-radius: 5px;
+    background: transparent;
+    color: whitesmoke;
+    margin-bottom: 10px;
+}
+
+.sign-up-container .nav-label{
+    color: whitesmoke;
+}
+.sign-box h1{
+    color: whitesmoke;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.signs-box button:hover{
+    background:rgb(197, 183, 238);
+    color:rgb(27, 26, 26);
+}
+
+
+a:hover {
+    background-color: yellowgreen;
 }
